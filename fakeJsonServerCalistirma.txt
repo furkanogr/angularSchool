@@ -1,0 +1,4 @@
+ ek bir terminal açıp bunu yapıştırıyorsun çünkü 4200 portunda angular çalışıyor alttakini 3000 vb. portta çalıştırmak için kullanırsın.
+--- json-server --watch db.json
+fake json kurulumu için 
+--- npm install -g json-server   (https://github.com/typicode/json-server)
