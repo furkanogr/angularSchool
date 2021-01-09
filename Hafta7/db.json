@@ -1,19 +1,20 @@
 {
-  "posts": [
+  "Kayitlar": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 877,
+      "adsoyad": "Ahmet Hamdi Tanpınar",
+      "mail": "tanpinarhamdi@ahmet.com",
+      "yas": 45,
+      "kayTarih": "1610233401833",
+      "duzTarih": "1610233401833"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 142,
+      "adsoyad": "Furkan Oğur",
+      "mail": "furkan@gmail.com",
+      "yas": 19,
+      "kayTarih": "1610233455430",
+      "duzTarih": "1610233455430"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
