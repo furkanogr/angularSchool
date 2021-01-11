@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Kayıtlar</h4>
+            <input class="form-control w-50 mt-3" type="text" placeholder="Aranacak Değer Giriniz"
+                (keyup)="Ara($event.target.value)">
+            <table class="table table-hover mt-3">
+                <thead>
+                    <tr>
+                        <th (click)="Sirala('id')">Id</th>
+                        <th (click)="Sirala('adsoyad')">Ad Soyad</th>
+                        <th (click)="Sirala('mail')">E-Posta</th>
+                        <th (click)="Sirala('yas')">Yaş</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let kayit of kayitlar">
+                        <td>{{kayit.id}}</td>
+                        <td>{{kayit.adsoyad}}</td>
+                        <td>{{kayit.mail}}</td>
+                        <td>{{kayit.yas}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row row-cols-lg-auto">
+                <input type="number" class="form-control w-25" [value]="limit"
+                    (keyup)="LimitBelirle($event.target.value)">
+                <button class="btn btn-outline-primary ms-3" (click)="OncekiSayfa()" [disabled]="sayfa<2">Önceki
+                    Sayfa</button>
+                <button class="btn btn-outline-primary ms-3" (click)="SonrakiSayfa()"
+                    [disabled]="kayitlar?.length==0">Sonraki Sayfa</button>
+            </div>
+        </div>
+    </div>
+</div>
